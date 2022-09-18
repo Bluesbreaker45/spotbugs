@@ -221,6 +221,7 @@ public class FindBugs2 implements IFindBugsEngine, AutoCloseable {
             throw new UnsupportedOperationException("This FindBugs invocation was started without analysis capabilities");
         }
 
+        // just a performance profiler for the 'execute' method
         Profiler profiler = bugReporter.getProjectStats().getProfiler();
 
         try {
